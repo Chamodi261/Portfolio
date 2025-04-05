@@ -1,0 +1,176 @@
+/* Navigation bar styles */
+.navbar {
+    background-color: #4DA19A !important; /* Deep teal */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 20px !important;
+    color: white !important; /* White text */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: black !important;
+    font-weight: bold;
+    background-color: #046f82 !important;
+    border-radius: 5px;
+    font-size: 22px !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: rgb(255, 255, 255) !important;
+    background-color: #117080 !important;
+    border-radius: 5px;
+    font-size: 22px !important;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../static/Home.jpg'); /* Make sure the path is correct */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------------
+   NAVBAR
+------------------------------ */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------
+   SECTION CONTAINERS
+------------------------------ */
+.contact-section {
+    background-color: rgba(240, 248, 255, 0.85);
+    border-radius: 12px;
+    margin: 60px auto 40px;
+    padding: 30px 20px;
+    max-width: 1100px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card {
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body .title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #007b8f;
+}
+
+.card-body .category {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Card grid layout */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+/* ------------------------------
+   SKILL COLUMNS (THREE COLUMN SECTION)
+------------------------------ */
+.skill-columns ul {
+    list-style-type: disc;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.skill-columns ul ul {
+    list-style-type: circle;
+    padding-left: 25px;
+    margin-top: 5px;
+}
+
+.skill-columns b {
+    display: block;
+    margin-bottom: 10px;
+    color: #007b8f;
+    font-size: 1.1rem;
+    text-align: left;
+
+
+}
+
+/* ------------------------------
+   RESPONSIVE STYLES
+------------------------------ */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .card-body .category {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .edu-section,
+    .section {
+        padding: 10px 15px;
+    }
+
+    .card-body .title {
+        font-size: 1.2rem;
+    }
+
+    .card-body .category {
+        font-size: 0.95rem;
+    }
+}
+
+/* Small Screens */
+@media (max-width: 480px) {
+    .edu-section,
+    .section {
+        margin: 40px 10px;
+        padding: 12px;
+    }
+
+    .card-body .title {
+        font-size: 1.1rem;
+    }
+
+    .card-body .category {
+        font-size: 0.85rem;
+    }
+}
+
+/* Responsive Columns in Skills Section */
+@media (max-width: 992px) {
+    .skill-columns {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skill-columns .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .skill-columns ul {
+        padding-left: 40px;
+        list-style-position: inside;
+    }
+}
